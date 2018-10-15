@@ -1,0 +1,171 @@
+/***********
+General
+************/
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+/***********
+Heading
+************/
+@media screen and (min-width: 374px)
+{
+
+    #logo {
+      text-align: center;
+      margin: 0;
+      width: 10%;
+    }
+
+
+    h1 {
+      font-family: 'Courgette', cursive;
+      margin: 40px 0;
+      font-size: 3.10em;
+      line-height: 4em;
+      letter-spacing: 0.3em;
+
+    }
+}
+/***********
+body
+***********/
+
+@media screen and (min-width: 759px)
+{
+
+/****grid imagenes****/
+
+    body{
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+
+    .picture-grid{
+      margin: 2em;
+      display:grid;
+      grid-template-columns: repeat(auto-fill,minmax(260px, 1fr));
+      justify-content: center;
+      grid-gap: 2em;
+      grid-row-gap: 2em;
+      width: 100%,
+    }
+
+    .grid-box img {
+      width: 100%;
+    }
+
+    p {
+      font-family: 'Raleway', sans-serif;
+      font-weight: normal;
+      font-size: 1.2em;
+    }
+}
+/***********
+Footer
+************/
+
+footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.80em;
+  text-align: center;
+  padding-top: 2em;
+  color: #0174DF
+}
+
+/***********
+Colors
+************/
+
+
+
+/* links */
+a {
+  color: #0174DF
+}
+
+/* encabezado */
+
+  header {
+    background: #002266;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+  }
+
+
+/*texto logo*/
+h1 {
+  color: #fff;
+}
+
+
+/* navegación */
+nav {
+  background: #0B0B3B;
+}
+
+/* links de navegación*/
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* links seleccionados*/
+nav a.selected, a:hover {
+  color: #80ccff;
+}
+
+/* cuerpo */
+body {
+  background-color: #fff;
+}
+
+/******************
+container
+******************/
+
+
+* {
+    margin: 5px 5px;
+    padding: 0;
+}
+
+.container {
+    padding: auto;
+    flex-basis: 100%;
+}
+
+ul {
+    list-style:none;
+    display: flex;
+    padding: 1.5%;
+    justify-content: space-around;
+    }
+
+
+/***********************
+RESPONSIVE
+***********************/
+
+@media screen and (max-width:959px) {
+    #ul{
+      width: 98%;
+    }
+   #p{
+     width: 24%%;
+   }
+   #picture-grid{
+     width: 10%;
+   }
+   #header{
+     width: 100%;
+   }
+}
